@@ -4,17 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Seeds of Change</title>
-  <style>
+<style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
     header { background:#4B8B3B; color:white; padding:20px; text-align:center; }
     nav a { margin:0 15px; color:white; text-decoration:none; font-weight:bold; }
-    .container { padding:20px; }
-    .hero { text-align:center; margin-bottom:30px; }
-    .hero h1 { margin:0; font-size:2em; }
-    .section { margin-bottom:30px; }
-    .event, .contact { background:#f4f4f4; padding:15px; border-radius:8px; }
-    footer { text-align:center; font-size:0.8em; color:#666; padding:10px; }
-  </style>
+    .container { padding:0; } /* Removed padding so images touch the edges */
+    
+    .hero { text-align:center; padding: 50px 20px; }
+    .hero h1 { margin:0; font-size:2.5em; color: #4B8B3B; }
+    
+    .section { 
+        padding: 60px 20px; 
+        margin-bottom: 0; 
+        background-size: cover; 
+        background-position: center;
+        background-attachment: fixed; /* This creates a cool parallax effect */
+    }
+
+    /* About Us Background */
+    #about { 
+        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('about.png'); 
+    }
+
+    /* Events Background */
+    #events { 
+        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('event.png'); 
+    }
+
+    /* Contact Background */
+    #contact { 
+        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('subcribe.png'); 
+    }
+
+    /* Making the text boxes look clean over the images */
+    .section h2, .section p, .section h3 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 1px 1px 1px white;
+    }
+
+    footer { text-align:center; font-size:0.8em; color:#666; padding:20px; background: white; }
+</style>
 </head>
 <body>
 
@@ -66,6 +97,7 @@
 
 </body>
 </html>
+
 
 
 
