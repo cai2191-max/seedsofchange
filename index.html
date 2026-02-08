@@ -8,43 +8,44 @@
     body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
     header { background:#4B8B3B; color:white; padding:20px; text-align:center; }
     nav a { margin:0 15px; color:white; text-decoration:none; font-weight:bold; }
-    .container { padding:0; } /* Removed padding so images touch the edges */
     
-    .hero { text-align:center; padding: 50px 20px; }
-    .hero h1 { margin:0; font-size:2.5em; color: #4B8B3B; }
+    .container { padding:0; width: 100%; }
+    
+    .hero { text-align:center; padding: 60px 20px; background: white; }
+    .hero h1 { margin:0; font-size:2.8em; color: #4B8B3B; }
+    /* This makes the "Dedicated to..." text larger */
+    .hero p { font-size: 1.4em; color: #555; }
     
     .section { 
-        padding: 60px 20px; 
-        margin-bottom: 0; 
+        padding: 80px 20px; 
         background-size: cover; 
         background-position: center;
-        background-attachment: fixed; /* This creates a cool parallax effect */
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        border-bottom: 1px solid #ddd;
     }
 
-    /* About Us Background */
-    #about { 
-        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('about.png'); 
+    /* Bigger font for the "About," "Event," and "Contact" descriptions */
+    .section p { 
+        font-size: 1.25em; /* This is about 25% larger than before */
+        font-weight: 400;
+        color: #222; /* Darker black for better contrast */
     }
 
-    /* Events Background */
-    #events { 
-        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('event.png'); 
-    }
+    .section h2 { font-size: 2.2em; margin-top: 0; }
 
-    /* Contact Background */
-    #contact { 
-        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('subcribe.png'); 
-    }
+    #about { background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('about-bg.png'); }
+    #events { background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('event-bg.png'); }
+    #contact { background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('contact-bg.png'); }
 
-    /* Making the text boxes look clean over the images */
     .section h2, .section p, .section h3 {
-        max-width: 800px;
+        max-width: 850px;
         margin-left: auto;
         margin-right: auto;
-        text-shadow: 1px 1px 1px white;
+        text-align: center;
     }
 
-    footer { text-align:center; font-size:0.8em; color:#666; padding:20px; background: white; }
+    footer { text-align:center; font-size:0.9em; color:#666; padding:30px; background: white; }
 </style>
 </head>
 <body>
@@ -97,6 +98,7 @@
 
 </body>
 </html>
+
 
 
 
